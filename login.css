@@ -1,0 +1,255 @@
+:root{
+  --mainblue: #3370F2 ;
+  --darkblue:#364564  ;
+  --darkGrey: #313134  ;
+  --grey: #9F9FA3 ;
+  --yellow: #D7F211 ;
+  --red:#FF0023 ;
+  --lightwhite: #E6EAF2;
+}
+
+*{
+  margin:0 ;
+  padding:0;
+  outline: none;
+  box-sizing:border-box ;
+  font-family:Noto sans JP, sans-serif ;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  color: var(--darkblue);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+
+/*top bar*/
+
+
+p{
+  font-size: 16px;
+
+}
+
+.label-cart{
+  position:fixed ;
+  top:15;
+  right:10;
+  z-index:4 ;
+  color: var(--yellow);
+  cursor:pointer ;
+  margin-right: 15px;
+   background: var(--lightwhite);
+    text-decoration: none;
+    font-size: px;
+    border-radius: 20px;
+    padding: 3px 7px 5px 3px;
+}
+
+.label-cart:hover{
+    background-color: var(--yellow);
+    color: wheat;
+    }
+
+
+.logo{
+  position:fixed;
+  background: var(--darkblue);
+  color: var(--lightwhite);
+  width:100%;
+  text-align:left ;
+  padding:15px 420px 15px 60px;
+  top: 0;
+  z-index:2;
+  font-size: 28px;
+}
+
+
+
+
+
+section
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-size:20px;
+}
+
+section .imgbx:before{
+  content:;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg,#e91e6);
+}
+
+section .imgbx{
+  position: relative;
+  width: 90%;
+  height: 100%;
+}
+
+section .imgbx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.imgs1{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:55%;
+  height:760px;
+  border-radius: 0px;
+  background-image: url(img16.jpg);
+  background-size:100% 100%;
+  box-shadow: rgba(149, 157, 165, 0.02) 0px 8px 24px;
+  animation: changeImage 20s  ease-in-out infinite ;
+  margin-top: 65px;
+}
+@keyframes changeImage{
+    0%{
+        background-image: url("img11.jpg");
+    }
+    10%
+    {
+        background-image: url(img12.jpg);
+    }
+    20%
+    {
+        background-image: url(img13.jpg);
+    }
+    30%
+    {
+        background-image: url(img14.jpg);
+    }
+    40%
+    {
+        background-image: url(img15.jpg);
+    }
+
+    50%{
+        background-image: url(img6.jpg);
+    }
+    60%
+    {
+        background-image: url(img7.jpg);
+    }
+    70%
+    {
+        background-image: url(img8.jpg);
+    }
+    80%
+    {
+        background-image: url(img9.jpg);
+    }
+    90%
+    {
+        background-image: url(img5.jpg);
+    }
+    100%
+    {
+        background-image: url(img3.jpg);
+     }
+}
+
+
+
+
+
+
+/* Full-width input fields */
+
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 50px;
+  background-color: #364564;
+  height: 60px;
+  font-size: 17px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+
+  padding: 14px 20px;
+  background-color: #364564;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
